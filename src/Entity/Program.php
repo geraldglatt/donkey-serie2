@@ -78,4 +78,14 @@ class Program
 
         return $this;
     }
+    public function __toString()
+    {
+        $res ="";
+        $res .="La catégorie est :". $this->getCategory();
+        $res .="Le titre est :".$this->getTitle();
+        $res .="Le sommaire est :". $this->getSummary();
+        $res .="Le poster est ". $this->getPoster();
+        return $res;
+        
+    }
 }
